@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="contenedor">
+        <h1>Galería de Imágenes</h1>
+        
+        <!-- Sección para agregar nuevas imágenes -->
+        <div class="contenedor-entrada">
+            <input type="text" id="urlImagen" placeholder="URL de la imagen">
+            <input type="text" id="tituloImagen" placeholder="Título de la imagen">
+            <button id="agregarImagen">Añadir Imagen</button>
+        </div>
+        
+        <!-- Contenedor para mostrar la galería de imágenes -->
+        <div id="galeria" class="galeria"></div>
+    </div>
+    
+    <!-- Ventana modal para mostrar detalles de la imagen -->
+    <div id="expo" class="expo">
+        <div class="contenido-expo">
+            <span class="cerrar">&times;</span>
+            <img id="imagenModal" src="" alt="">
+            <h3 id="tituloModal"></h3>
+        </div>
+    </div>
+    
+    <!-- Incluimos el archivo JavaScript para la funcionalidad -->
+    <script src="script.js"></script>
+</body>
+</html>
